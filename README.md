@@ -11,7 +11,7 @@ To test the library, know an address of a Bitcoin Core Node or have a instance r
 3. Clone this project to a directory on your system by using the following command: `git clone https://github.com/T-Hacker/p2p-handshake.git`
 4. Change directory to the project: `cd p2p-handshake`
 5. Test the library by doing:
-    - Linux: `set BTC_NODE_ADDRESS=127.0.0.1:8333 && cargo test handshake -- --nocapture`
+    - Linux: `BTC_NODE_ADDRESS=127.0.0.1:8333 cargo test handshake -- --nocapture`
     - Windows (PS): `$env:BTC_NODE_ADDRESS="127.0.0.1:8333"; cargo test handshake -- --nocapture`
 	- Windows (CMD): `set BTC_NODE_ADDRESS=127.0.0.1:8333 && cargo test handshake -- --nocapture`
 6. If everything is working correctly, you should see in the terminal a message displaying the name of the user agent that is running on your system.
