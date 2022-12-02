@@ -42,8 +42,6 @@ mod tests {
         println!("Connecting to {}...", address);
 
         let mut stream = std::net::TcpStream::connect(address).unwrap();
-        // let mut stream = std::net::TcpStream::connect("127.0.0.1:8333").unwrap();
-        // let mut stream = std::net::TcpStream::connect("157.90.212.105:8333").unwrap();
 
         // Create payload message.
         let timestamp = std::time::SystemTime::now()
